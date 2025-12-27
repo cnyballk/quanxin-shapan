@@ -1,0 +1,43 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  // background: linear-gradient(to bottom, transparent, #fff) #eceeef;
+  height: 100%;
+  background-color: transparent;
+  touch-action: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  font-family: FZLTZHJW--GB1-0;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+#root {
+  height: 100%;
+}
+@font-face {
+  font-family: FZLTCHJW--GB1-0;
+  src: url("@/assets/font/chinese/FZLTCHJW.TTF");
+}
+
+@font-face {
+  font-family: HuaweiSans;
+  src: url("@/assets/font/english/HuaweiSans-Regular.ttf");
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: inherit;
+  caret-color: inherit;
+  transition: background-color 999999s ease-out 0s;
+  background-image: none;
+  box-shadow: 0 0 0 1000px transparent inset;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+}

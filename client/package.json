@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "author": "cnyballk <584518260@qq.com>",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@cnyballk/full-screen": "^1.0.5",
+    "ahooks": "^3.9.6",
+    "antd": "^6.1.2",
+    "axios": "^1.13.2",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "classnames": "^2.5.1",
+    "lodash-es": "^4.17.22",
+    "umi": "^4.6.14",
+    "zustand": "^5.0.9"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.0.3"
+  }
+}

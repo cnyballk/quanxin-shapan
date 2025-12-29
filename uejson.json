@@ -1,0 +1,105 @@
+{
+	"Preset": {
+		"Name": "RC_Remote",
+		"Path": "/Game/PerspectiveSwitch/Blueprints/RC_Remote.RC_Remote",
+		"ID": "55B97190475EAC98C6CA82B5602158A5",
+		"Groups": [
+			{
+				"Name": "All",
+				"ExposedProperties": [],
+				"ExposedFunctions": [],
+				"ExposedActors": []
+			},
+			{
+				"Name": "BP_Input_C",
+				"ExposedProperties": [],
+				"ExposedFunctions": [
+					{
+						"DisplayName": "API to Pawn",
+						"ID": "7216C43246FBA35196600C89ECEA48BD",
+						"UnderlyingFunction": {
+							"Name": "API_ToPawn",
+							"Description": "",
+							"Arguments": []
+						},
+						"OwnerObjects": [
+							{
+								"Name": "BP_Input",
+								"Class": "BP_Input_C",
+								"Path": "/Game/PerspectiveSwitch/Demo/PerspectiveSwitch_Showcase.PerspectiveSwitch_Showcase:PersistentLevel.BP_Input_C_1",
+								"Description": ""
+							}
+						]
+					},
+					{
+						"DisplayName": "API Camera Move",
+						"ID": "356CB0F64BD45A386A79449446A0EDC5",
+						"UnderlyingFunction": {
+							"Name": "API_CameraMove",
+							"Description": "",
+							"Arguments": [
+								{
+									"Name": "tag",
+									"DisplayName": "Tag",
+									"Description": "",
+									"Type": "FString",
+									"TypePath": "None",
+									"ContainerType": "",
+									"KeyType": "",
+									"Metadata": {},
+									"StructDescription": {
+										"UnderlyingProperty": []
+									}
+								}
+							]
+						},
+						"OwnerObjects": [
+							{
+								"Name": "BP_Input",
+								"Class": "BP_Input_C",
+								"Path": "/Game/PerspectiveSwitch/Demo/PerspectiveSwitch_Showcase.PerspectiveSwitch_Showcase:PersistentLevel.BP_Input_C_1",
+								"Description": ""
+							}
+						]
+					},
+					{
+						"DisplayName": "API Load Day",
+						"ID": "217A0F4D4B682EF1FBCD3EBB5599E460",
+						"UnderlyingFunction": {
+							"Name": "API_LoadDay",
+							"Description": "",
+							"Arguments": []
+						},
+						"OwnerObjects": [
+							{
+								"Name": "BP_Input",
+								"Class": "BP_Input_C",
+								"Path": "/Game/PerspectiveSwitch/Demo/PerspectiveSwitch_Showcase.PerspectiveSwitch_Showcase:PersistentLevel.BP_Input_C_1",
+								"Description": ""
+							}
+						]
+					},
+					{
+						"DisplayName": "API Load Night",
+						"ID": "FD7A3DE64D6A8F8DBABE8988ED42A308",
+						"UnderlyingFunction": {
+							"Name": "API_LoadNight",
+							"Description": "",
+							"Arguments": []
+						},
+						"OwnerObjects": [
+							{
+								"Name": "BP_Input",
+								"Class": "BP_Input_C",
+								"Path": "/Game/PerspectiveSwitch/Demo/PerspectiveSwitch_Showcase.PerspectiveSwitch_Showcase:PersistentLevel.BP_Input_C_1",
+								"Description": ""
+							}
+						]
+					}
+				],
+				"ExposedActors": []
+			}
+		],
+		"Controllers": []
+	}
+}

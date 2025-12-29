@@ -1,14 +1,190 @@
-.home-page{
+.home-page {
   position: relative;
   width: 100%;
   height: 100%;
 
-  .tools{
+  .tools {
     position: absolute;
     right: 144px;
     top: 144px;
     display: flex;
     align-items: center;
     gap: 24px;
+    z-index: 30;
+  }
+  .icon-wrapper {
+    width: 162px;
+    height: 162px;
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(3, 19, 44, 0.45) 0%, rgba(5, 24, 53, 0.15) 100%);
+    backdrop-filter: blur(70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .guide {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    cursor: pointer;
+  }
+  .guide-img {
+  }
+  .title {
+    position: absolute;
+    left: 1584px;
+    top: 59px;
+    width: 672px;
+    height: 56px;
+    opacity: 1;
+
+    font-family: FZLanTingHeiS-R-GB;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: 0em;
+
+    font-variation-settings: "opsz" auto;
+    color: #ffffff;
+
+    text-shadow: 0px 0px 14px rgba(0, 0, 0, 0.5);
+  }
+  .switch-wrapper-0 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 147px;
+  }
+  .switch-wrapper-enter {
+    position: absolute;
+    left: 60px;
+    top: 150px;
+  }
+
+  .switch-wrapper-selectFloor,
+  .switch-wrapper-modeSwitch,
+  .switch-wrapper-lookDevice {
+    position: absolute;
+    left: 60px;
+    top: 150px;
+    flex-direction: column;
+    height: auto !important;
+  }
+  .switch-wrapper-title {
+    .title-active {
+      background: #c7000b;
+    }
+    .switch-item {
+      &:active,
+      &.active {
+        background: rgba(255, 255, 255, 0.3) !important;
+      }
+    }
+  }
+  .switch-wrapper-arrowIcon {
+    .arrow-icon {
+      position: absolute;
+      right: -180px;
+      top: 20px;
+    }
+  }
+  .switch-wrapper-overlook {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+  }
+  .fangxiangpan1 {
+    position: absolute;
+    left: 150px;
+    bottom: 150px;
+  }
+  .fangxiangpan2 {
+    position: absolute;
+    right: 150px;
+    bottom: 150px;
+  }
+  .switch-wrapper {
+    height: 164px;
+    padding: 30px;
+    border-radius: 100px;
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(3, 19, 44, 0.45) 0%, rgba(5, 24, 53, 0.15) 100%);
+    backdrop-filter: blur(70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    .switch-item {
+      width: 420px;
+      height: 124px;
+      border-radius: 120px;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: FZLanTingHeiS-DB-GB;
+      font-size: 48px;
+      font-weight: normal;
+      line-height: normal;
+      letter-spacing: 0em;
+      cursor: pointer;
+      font-variation-settings: "opsz" auto;
+      color: #ffffff;
+
+      &:active,
+      &.active {
+        background: #c7000b;
+      }
+    }
+  }
+
+  .look-device-list-wrapper {
+    position: absolute;
+    left: 580px;
+    top: 350px;
+    width: 671px;
+    height: 1120px;
+    border-radius: 88px;
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(3, 19, 44, 0.45) 0%, rgba(5, 24, 53, 0.15) 100%);
+    backdrop-filter: blur(70px);
+    padding: 50px;
+    .look-device-list {
+      overflow: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      height: 100%;
+
+      &::-webkit-scrollbar {
+        width: 14px;
+        opacity: 1;
+        border-radius: 88px;
+        background: rgba(216, 216, 216, 0.2);
+      }
+      &::-webkit-scrollbar-thumb {
+        width: 14px;
+        border-radius: 88px;
+        background: rgba(216, 216, 216, 0.5);
+      }
+    }
+    .look-device-item {
+      width: 259px;
+      height: 228px;
+      border-radius: 50px;
+      background: rgba(255, 255, 255, 0.09);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .label {
+        font-size: 24px;
+        color: #ffffff;
+      }
+    }
   }
 }
